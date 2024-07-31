@@ -86,10 +86,10 @@
             {{ date('M d, Y', strtotime($question->created_at)) }}
             </p>
           </div>
-          <div class="col-8 question_body px-4 d-flex ms-2">
-            <div class="my-auto p-1">
-              <i class="fa-solid fa-q fa-3x"></i>
-              <p class="qa_body  text-start pt-1"> {{ $question->body}} </p>
+          <div class="col-8 question_body px-4 ms-2">
+            <div class="my-auto p-1 q-content">
+              <i class="fa-solid fa-q fa-3x q_icon"></i>
+              <p class="qa_body text-start"> {{ $question->body}} </p>
             </div>
           </div>
           <div class="col-1 text-start user_account p-0 ms-0">
@@ -122,10 +122,10 @@
                 </p>
               @endif 
             </div>
-            <div class="col-8 answer_body me-0 d-flex">
-              <div class="my-auto px-1 py-auto">
-                <i class="fa-solid fa-a fa-3x"></i>
-                <p class="qa_body text-start">
+            <div class="col-8 answer_body me-0">
+              <div class="my-auto p-1 a-content">
+                <i class="fa-solid fa-a fa-3x a_icon"></i>
+                <p class="qa_body">
                   {{ $question->answer($question->id)->body }} 
                 </p>
               </div>

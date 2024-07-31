@@ -1,17 +1,9 @@
 /* detailrecipe.scss */
-// .container.detailrecipe {
-    
-//     background-color: #f8f9fa;
-//     color: #333;
-// }
 
 .containe 
 {
-    // max-width: 960px;
-    // margin: 0 auto;
+
     background-color: #F7F3EB;
-    // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    // border-radius: 10px;
     font-family: "Nunito";
     color: #4D1F01;
 }
@@ -34,24 +26,40 @@
         color: #e45900;
     }
 }
+.breadcrumb li:not(:first-child)::before {
+    font-family: "Nunito";
+    color: #887569;
+    font: var(--fa-font-solid);
+    content: "\f105";
+    margin-top: .3em;
+  }
 
 .recipe-detail.detailrecipe 
 {
-    .chef-icon 
-    {
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-    }
+   
 
     .writer-name 
     {
         text-decoration: none;
         color: #4D1F01;
+        .chef-icon 
+        {
+            width: 5.4em;
+            height: 4.73em;
+        }
+        
+        .writer-username
+        {
+            width: 100%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
     }
 
     .recipe-title 
     {
+        text-transform: capitalize;
         font-size: 2.2rem;
         font-weight: 600;
         color: #4d1f01;

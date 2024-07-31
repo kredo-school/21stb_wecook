@@ -17,16 +17,20 @@
           data-tab="01"
         >
           <i class="fa-regular fa-comments me-1"></i>
-          Comments&nbsp;
-          <span>({{ $recipe->comment->count() }})</span>
+            <span class="tab-comments_questions">
+              Comments&nbsp;
+            </span>
+            <span class="counts">({{ $recipe->comment->count() }})</span>
         </li>
         <li 
           class="tab_menu-item w-100" 
           data-tab="02"
         >
           <i class="fa-solid fa-file-circle-question"></i>
-          Q&A&nbsp;
-          <span>({{ $recipe->questions()->count() }})</span>
+            <span class="tab-comments_questions">
+              Q&A&nbsp;
+            </span>
+            <span class="counts">({{ $recipe->questions()->count() }})</span>
         </li>
       </ul>
 

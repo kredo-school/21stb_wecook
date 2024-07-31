@@ -13,7 +13,7 @@
                 <li class="breadcrumb-item">
                     <a href="{{ route('home') }}">Home</a>
                 </li>
-                <li class="breadcrumb-item current-reciprname" aria-current="page">{{ $recipe->title }}</li>
+                <li class="breadcrumb-item current-reciprname" aria-current="location">{{ $recipe->title }}</li>
             </ol>
         </nav>
         {{-- button for jumo to the comment/QA section --}}
@@ -38,7 +38,7 @@
                     @else
                         <img src="{{ asset('/images/profile_icon.png') }}" alt="{{ $recipe->user->name }}" class="chef-icon mr-2 rounded-circle">
                     @endif
-                    <p class="h3 align-self-center fill-flex my-auto">&nbsp;{{ $recipe->user->name }}</p>
+                    <p class="h3 align-self-center fill-flex my-auto writer-username">&nbsp;{{ $recipe->user->name }}</p>
                 </a>
             </div>
             <h1 class="recipe-title mb-4 pt-3">

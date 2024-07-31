@@ -108,34 +108,27 @@
                 <button 
                   id="account-dropdown"
                   data-bs-toggle="dropdown"
-                  class="pe-0 ms-2 account-username"
+                  class="pe-0 ms-2 d-inline-flex"
                 >
                   @if (Auth::user()->avatar)
                     <img 
                       src="{{ Auth::user()->avatar }}" 
                       alt="{{ Auth::user()->name }}" 
-                      class="rounded-circle avatar-lg"
+                      class="rounded-circle avatar-lg me-0"
                     >
-                    <span 
-                      class="mt-1" 
-                      style="color: #F7F3EB;"
-                    >
-                      {{ Auth::user()->name }}
-                    </span>
                   @else
                     <img 
                       src="{{ asset('/images//profile_icon.png') }}" 
                       alt="{{ Auth::user()->name }}" 
-                      class="rounded-circle avatar-lg"
+                      class="rounded-circle avatar-lg me-0"
                     >
-                    </i> 
-                    <span 
-                      class="mt-1" 
-                      style="color: #F7F3EB;"
-                    >
-                      {{ Auth::user()->name }}
-                    </span>
                   @endif
+                  <span 
+                    class="account-username" 
+                    style="color: #F7F3EB;"
+                  >
+                    {{ Auth::user()->name }}
+                  </span>
                 </button>
             
                 <div 
